@@ -1,5 +1,13 @@
 module.exports = {
   taxCalculator: function(money) {
-    return money * 0.1
+    if(money <= 10) {
+      return money * 0.1
+    }
+    if(money <= 20) {
+      return 1 + ((money - 10) * 0.07)
+    }
+    if(money <= 30) {
+      return 1.7 + ((money -20) * 0.05)
+    }
   }
 };
