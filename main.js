@@ -7,7 +7,10 @@ module.exports = {
       return 1 + ((money - 10) * 0.07)
     }
     if(money <= 30) {
-      return 1.7 + ((money -20) * 0.05)
+      return 1.7 + ((money - 20) * 0.05)
+    }
+    if(money > 30) {
+      return 2.2 + ((money - 30) * 0.03)
     }
   }
 };

@@ -14,4 +14,9 @@ describe('test', function() {
   it('should tax 5% on the third $10', function() {
     expect(code.taxCalculator(25)).to.equal(1.95);
   });
+
+  it('should tax 3% on anything over $30', function() {
+    expect(code.taxCalculator(35)).to.equal(2.35);
+    expect(code.taxCalculator(40)).to.equal(2.50);
+  });
 });
