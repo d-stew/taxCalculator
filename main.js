@@ -1,5 +1,5 @@
 module.exports = {
   taxCalculator: function(money) {
-    return true
+    return money * 0.1
   }
 };
